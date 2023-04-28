@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&family=Sofia+Sans:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+    border:  none;
+    outline: none;
+    transition: 0.2s linear all;
+    text-decoration: none;
+}
+:root{
+    --main: #ff0220;
+    --box_shadow:0.5rem 1rem 1.5rem rgba(0,0,0,0.7);
+    --border: 0.4rem solid var(--main);
+}
+*::selection{
+    background: var(--main);
+    color: #000;
+}
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+/*header start*/
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    box-shadow: var(--box_shadow);
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 9%;
+}
+header .logo img{
+    height: 6rem;
+}
+header .navbar a{
+    color:#fff;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+}
+header .navbar a:hover{
+    color:var(--main);
+}
+#MenuBtn{
+    color: #fff;
+    font-size:3rem;
+    cursor: pointer;
+    display: none;
+}
+/*header end*/
+/*Media query*/
+@media(max-width: 991px){
+    html{
+        font-size:55%;
+    }
+}
+@media(max-width:768px){
+    #MenuBtn{
+        display: initial;
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        border: 0.2rem solid #222;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0);
+    }
+}

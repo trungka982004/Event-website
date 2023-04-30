@@ -1,7 +1,5 @@
-let MenuBtn = document.querySelector("#MenuBtn")
-let Navbar = document.querySelector("header .navbar")
+const header = document.querySelector("header");
 
-MenuBtn.onclick = () => {
-    MenuBtn.classList.toggle("fa-times")
-    Navbar.classList.toggle("active")
-}
+window.addEventListener("scroll", function() {
+    header.classList.toggle("sticky", this.windows.scrollY > 80);
+})

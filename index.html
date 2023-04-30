@@ -1,38 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Event Website</title>
-        <!--Link google font-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <!-- Link style css -->
-        <link rel="stylesheet" href = "style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Menu website design</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- Box icon -->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comme:wght@500;700;900&family=Montserrat:ital,wght@0,200;1,100&
+        family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!--Header/Navbar Start-->
-        <Header>
-            <a href="#" class ="logo">
-                <img src="C:\Users\ADMIN\Documents\GitHub\Event-website\img\logo.png" alt = "">
-            </a>
+        <!-- header  -->
+        <header>
+            <a href="#" class="logo"><i class='bx bxs-home'></i>Restaurant</a>
 
-            <nav class="navbar">
-                <a href ="#Home">Home</a>
-                <a href ="#About">About</a>
-                <a href ="#Services">Services</a>
-                <a href ="#Gallery">Gallery</a>
-                <a href ="#Review">Review</a>
-                <a href ="#Contact">Contact</a>
-            </nav>
+            <ul class="navlist">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#shop">Our Shop</a></li>
+                <li><a href="#costumer">Our Costumer</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
 
-            <div class="fas fa-bars" id="MenuBtn"></div>
-        </Header>
-        <!--Header/navbar End-->
+            <div class="nav-icons">
+                <a href="#"><i class='bx bx-search' ></i></a>
+                <a href="#"><i class='bx bx-cart' ></i></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+
+        <!-- home -->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>Meet, <span>Eat&</span> <br> Enjoy The true <br> taste</h1>
+                <a href="#" class="btn">Explore Menu<i class='bx bxs-right-arrow' ></i></a>
+                <a href="#" class="btn2">Order Now</a>
+            </div>
+            <div class="home-img">
+                <img src="img/home-img.jpg">
+            </div>
+        </section>
+        <!-- container -->
+        <section class="container">
+            <div class="container-box">
+                <img src="img/c1.jpg">
+                <h3>11:00 am - 8:00 pm</h3>
+                <a href="#">working Hours</a>
+            </div>
+
+            <div class="container-box">
+                <img src="img/c2.jpg">
+                <h3>1444 Manchester</h3>
+                <a href="#">Get Direction</a>
+            </div>
+
+            <div class="container-box">
+                <img src="img/c3.jpg">
+                <h3>(222) 123456</h3>
+                <a href="#">Call Us Now</a>
+            </div>
+        </section>
+        <!-- about us -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/about.png">
+            </div>
+
+            <div class="about-text">
+                <h2>Livingg well begins <br> with eating well</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quia veritatis qui sit a ab. Optio nam consequuntur asperiores,
+                    magni molestias adipisci voluptatum doloremque similique dolore!</p>
+                    <a href="#" class="btn">Explore Story<i class='bx bxs-right-arrow' ></i></a>
+            </div>
+        </section>
+        <!--Our shop-->
+        <section class="shop" id="shop">
+            <div class="middle-text">
+                <h4>Our Shop</h4>
+                <h2>Lets Check Popular Products</h2>
+            </div>
+            <div class="shop-content">
+                <div class="row">
+                    <img src="img/p1.jpg">
+                    <h3>Pizza</h3>
+                    <p>It is made by fantastic cook</p>
+                    <div class="in-text">
+                        <div class="price">
+                            <h6>$21.00</h6>
+                        </div>
+                        <div class="s-btnn">
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="top-icon">
+                        <a href="#"><i class='bx bx-heart' ></i></a>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <img src="img/p2.jpg">
+                    <h3>Hamburger</h3>
+                    <p>It is made by fantastic cook</p>
+                    <div class="in-text">
+                        <div class="price">
+                            <h6>$22.00</h6>
+                        </div>
+                        <div class="s-btnn">
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="top-icon">
+                        <a href="#"><i class='bx bx-heart' ></i></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="img/p3.jpg">
+                    <h3>Milk Shakes</h3>
+                    <p>It is made by fantastic cook</p>
+                    <div class="in-text">
+                        <div class="price">
+                            <h6>$10.00</h6>
+                        </div>
+                        <div class="s-btnn">
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="top-icon">
+                        <a href="#"><i class='bx bx-heart' ></i></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="img/p4.jpg">
+                    <h3>Pho</h3>
+                    <p>It is made by fantastic cook</p>
+                    <div class="in-text">
+                        <div class="price">
+                            <h6>$15.00</h6>
+                        </div>
+                        <div class="s-btnn">
+                            <a href="#">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="top-icon">
+                        <a href="#"><i class='bx bx-heart' ></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row-btn">
+                <a href="#" class="btn">All Products<i class='bx bxs-right-arrow' ></i></a>
+
+            </div>
+        </section>
 
 
 
-        <!--Script for js-->
+        <!--Script-->
         <script src="index.js"></script>
     </body>
 </html>
